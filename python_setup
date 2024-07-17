@@ -1,0 +1,8 @@
+* Enable use of basic Python on Macbook
+  * Installed Python3 (3.12.4)
+    * Downloaded the installer from Apple's website
+  * After installing, required install of Command Line Tools for Mac
+    * Installing Xcode (Apple's IDE) was NOT required - I decided to delay deciding what IDE to use
+    * Installing the most recent version of Command Line Tools failed because my OS was outdated (MacOS 12.7)
+      * Used GPT to determine last full version of Command Line Tools compatible: XCode 14.2
+        * Source: https://developer.apple.com/download/all/?q=command%20line%20tools%20XCode%2014.2
