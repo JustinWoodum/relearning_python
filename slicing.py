@@ -41,3 +41,26 @@ print(f"Slicing [1:4]: {slice6}")
 # Slicing with a step
 slice7 = tuple_data[::2]
 print(f"Slicing with step [::2]: {slice7}")
+
+# Multidimensional slicing with a 2D list
+matrix = [
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10, 11, 12],
+    [13, 14, 15, 16]
+]
+print(f"Original matrix: {matrix}")
+
+# Slicing rows 1 to 3 and columns 1 to 3
+sub_matrix = [row[1:3] for row in matrix[1:3]]
+print(f"Sub-matrix (rows 1 to 2, columns 1 to 2): {sub_matrix}")
+
+# Using Ellipsis to select all dimensions except one
+# Ellipsis is useful in multidimensional arrays like NumPy arrays
+import numpy as np
+array3d = np.arange(27).reshape(3, 3, 3)
+print(f"Original 3D array:\n{array3d}")
+
+# Select the first two elements across the last dimension for all other dimensions
+ellipsis_slice = array3d[..., :2]
+print(f"Ellipsis slice of 3D array (first two elements of the last dimension):\n{ellipsis_slice}")
